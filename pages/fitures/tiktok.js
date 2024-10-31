@@ -1,3 +1,8 @@
+/*
+   * by balzz
+   * dont delate my wm
+   * follow more instagram: @iqstore78
+*/
 const axios = require("axios")
 const allowedApiKeys = require("../../declaration/arrayKey.jsx")
 
