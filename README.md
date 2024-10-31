@@ -40,7 +40,7 @@ let urls = req.query.urls
 // ↓
 const apiKey = req.query.apiKey
 
-/* ini buat pas user ga input req query itu, pastikan if urls itu harus sama uang di atas let urls itu**/
+/* ini buat pas user ga input req query itu, pastikan if urls itu harus sama kek di atas let urls itu**/
 
 // ↓
 if (!urls) {
