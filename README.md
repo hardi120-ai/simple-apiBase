@@ -18,6 +18,7 @@ npm start
 > Setelah itu tunggu saja
 ```
 
+#Penjelasan Nguwawor
 ```js
  /* axios guna scrap/api yang kamu tembak */
 
