@@ -32,7 +32,7 @@ try {
     }
 }
 
-const upload = async (prompt) => {
+const upload = async (buffer) => {
     let data = new FormData();
 const blob = new Blob([buffer], {
         type: "upload.jpg",
@@ -45,8 +45,8 @@ const blob = new Blob([buffer], {
         body: data
     });
 
-    let res = await response.json()
-return res.files[0].url
+    let resp = await response.json()
+return resp.files[0].url
 }
   
   try {
