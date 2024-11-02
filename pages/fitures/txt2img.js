@@ -91,10 +91,11 @@ async function makeRequest() {
   }
 }
 
+  const hannjir = await makeRequest()
+  
   try {
     res.status(200).json({
-      creator: "Hann",
-      hasil: makeRequest()
+      hannjir
     })
   } catch (error) {
     res.status(500).json({
