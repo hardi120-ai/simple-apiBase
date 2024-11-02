@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
     })
   }
 
-async function fluxschnell(prompt) {
+ const fluxschnell = async (prompt) => {
 try {
       const response = await axios.post(`https://api.cloudflare.com/client/v4/accounts/77192fa7d0e666303fc9ba04a53bbc87/ai/run/@cf/black-forest-labs/flux-1-schnell`, { "prompt": prompt }, { headers: { "Authorization": "Bearer Ds3TLA6CuIplDCpvia8zfXIy60rInplXbcVdVZIM" } });
       return response.data;
@@ -32,7 +32,7 @@ try {
     }
 }
 
-async function upload(buffer) {
+const upload = async (prompt) => {
     let data = new FormData();
 const blob = new Blob([buffer], {
         type: "upload.jpg",
