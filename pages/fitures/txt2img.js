@@ -50,7 +50,7 @@ return res.files[0].url
 }
   
   try {
-    const hai = await fluxschnell(text)
+    const hai = await fluxschnell(q)
 const buffer = Buffer.from(hai.result.image, 'base64')
 const data = await upload(buffer)
     res.status(200).json({
