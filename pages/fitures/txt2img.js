@@ -52,9 +52,9 @@ return resp.files[0].url
   try {
     const hai = await fluxschnell(q)
 const buffer = Buffer.from(hai.result.image, 'base64')
-const data = await upload(buffer)
+const hasilnya = await upload(buffer)
     res.status(200).json({
-      data
+      url: hasilnya
     })
   } catch (error) {
     res.status(500).json({
